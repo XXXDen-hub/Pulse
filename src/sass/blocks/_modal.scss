@@ -16,6 +16,22 @@
         background-color: #f2f2f2;
         padding: 38px 40px 40px 40px;
 
+        @media screen and (max-width: 1000px) {
+            padding: 28px 30px 30px 30px;
+            max-width: 370px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 20px 0px 0px 25px;
+            min-height: 360px;
+            max-width: 355px;
+        }
+
+        @media screen and (max-width: 400px) {
+            max-width: 320px;
+            max-height: 320px;
+        }
+
         &__close {
             position: absolute;
             top: 0;
@@ -24,6 +40,10 @@
             line-height: 21px;
             color: $main-color;
             cursor: pointer;
+
+            @media screen and (max-width: 600px) {
+                right: -25px;
+            }
         }
 
         &__subtitle {
@@ -31,6 +51,18 @@
             font-size: 18px;
             font-weight: 700;
             text-align: center;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 17px;
+            }
+
+            @media screen and (max-width: 600px) {
+                text-align: left;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 15px;
+            }
         }
 
         &__descr {
@@ -38,6 +70,18 @@
             font-size: 14px;
             font-weight: 500;
             text-align: center;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 13px;
+            }
+
+            @media screen and (max-width: 600px) {
+                text-align: left;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 12px;
+            }
         }
 
         &_mini {

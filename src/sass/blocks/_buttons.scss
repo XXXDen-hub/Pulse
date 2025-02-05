@@ -10,6 +10,26 @@
     text-transform: uppercase;
     margin-top: 4px;
 
+    @media screen and (max-width: 900px) {
+        max-width: 140px;
+        max-height: 30px;
+        font-size: 11px;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-width: 130px;
+        max-height: 25px;
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-width: 120px;
+    }
+
+    @media screen and (max-width: 400px) {
+        max-width: 110px;
+    }
+
     &_main {
         width: 300px;
         height: 50px;
@@ -21,6 +41,33 @@
         border-radius: 5px;
         text-transform: uppercase;
         font-weight: 500;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 270px;
+            max-height: 45px;
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 70px;
+            max-width: 250px;
+            max-height: 40px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 600px) {
+            max-width: 200px;
+            font-size: 12px;
+            margin-top: 60px;
+        }
+
+        @media screen and (max-width: 482px) {
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 400px) {
+            margin-top: 30px;
+        }
     }
 
     &_submit {
@@ -33,11 +80,31 @@
         border-radius: 5px;
         text-transform: uppercase;
         font-weight: 500;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 45px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 600px) {
+            right: 20px;
+        }
+
+        @media screen and (max-width: 400px) {
+            max-width: 260px;
+        }
     }
 
     &_mini {
         width: 135px;
         height: 44px;
         font-size: 14px;
+
+        @media screen and (max-width: 768px) {
+            max-width: 120px;
+            max-height: 40px;
+            font-size: 14px;
+        }
     }
 }

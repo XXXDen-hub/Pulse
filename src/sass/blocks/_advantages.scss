@@ -2,16 +2,67 @@
     padding: 70px 0 80px 0;
     background-color: #f6f6f6;
 
+    @media screen and (max-width: 800px) {
+        padding: 50px 0 10px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        // max-width: 700px;
+        padding: 45px 17px 0px 17px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 40px 15px 0px 15px;
+    }
+
     &__heading {
         font-size: 30px;
         font-weight: 700;
         text-align: center;
+
+        @media screen and (max-width: 900px) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 22px;
+        }
+
+        @media screen and (max-width: 482px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 18px;
+        }
     }
 
     &__wrapper {
         margin-top: 65px;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 900px) {
+            margin-top: 55px;
+        }
+
+        @media screen and (max-width: 600px) {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 50px;
+        }
+
+        @media screen and (max-width: 400px) {
+            margin-top: 35px;
+            padding-bottom: 40px;
+        }
     }
 
     &__item {
@@ -19,6 +70,20 @@
         flex-direction: column;
         align-items: center;
         max-width: 238px;
+
+        @media screen and (max-width: 900px) {
+            max-width: 230px;
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 200px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 600px) {
+            max-width: 170px;
+        }
     }
 
     &__subtitle {
@@ -26,6 +91,21 @@
         color: #0d0d0d;
         font-size: 18px;
         font-weight: 700;
+
+        @media screen and (max-width: 900px) {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 25px;
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+            margin-top: 10px;
+            font-size: 14px;
+        }
     }
 
     &__descr {
@@ -39,9 +119,27 @@
             color: #ff0000;
             text-decoration: underline;
         }
+
+        @media screen and (max-width: 900px) {
+            margin-top: 22px;
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 11px;
+            margin-top: 10px;
+        }
     }
 
     &__icon {
+        @media screen and (max-width: 600px) {
+            width: 55px;
+        }
+
         &_animated {
             animation: heartbeat 1.5s ease infinite;
             // animation-name: heartbeat;

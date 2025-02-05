@@ -1,12 +1,36 @@
 .catalog {
     padding-bottom: 80px;
 
+    @media screen and (max-width: 768px) {
+        padding-bottom: 70px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding-bottom: 60px;
+    }
+
     &__title {
         color: #0d0d0d;
         font-size: 30px;
         text-align: center;
         text-transform: uppercase;
         font-weight: 300;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 28px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 22px;
+        }
+
+        @media screen and (max-width: 482px) {
+            font-size: 20px;
+        }
     }
 
     &__tabs {
@@ -17,6 +41,18 @@
         align-items: center;
         margin-bottom: 0;
         padding-left: 0;
+
+        @media screen and (max-width: 1024px) {
+            margin-top: 60px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 482px) {
+            margin-top: 35px;
+        }
     }
 
     &__tab {
@@ -33,6 +69,33 @@
         margin: 0 5px;
         cursor: pointer;
         transition: 0.5s all;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 210px;
+            max-height: 45px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 165px;
+            max-height: 45px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 600px) {
+            max-width: 130px;
+            max-height: 45px;
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 482px) {
+            max-width: 105px;
+            max-height: 40px;
+            font-size: 11px;
+            text-align: center;
+        }
 
         &:hover {
             box-shadow: 3px 3px 20px $main-color;
@@ -59,6 +122,18 @@
         &_active {
             display: flex;
         }
+
+        @media screen and (max-width: 1024px) {
+            margin-top: 50px;
+            justify-content: center;
+            gap: 35px;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 45px;
+            gap: 20px;
+        }
     }
 
     &-item {
@@ -69,11 +144,24 @@
         overflow: hidden;
         margin-bottom: 20px;
 
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 280px;
+            // max-height: 350px;
+        }
+
         &__img {
             display: block;
             margin: 0 auto;
             max-width: 100%;
             height: 200px;
+
+            @media screen and (max-width: 768px) {
+                max-height: 170px;
+            }
         }
 
         &__subtitle {
@@ -82,6 +170,11 @@
             font-size: 16px;
             font-weight: 700;
             text-align: center;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 15px;
+                font-size: 15px;
+            }
         }
 
         &__descr {
@@ -90,6 +183,10 @@
             font-size: 14px;
             font-weight: 300;
             text-align: center;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 14px;
+            }
         }
 
         &__link {
